@@ -1,0 +1,32 @@
+<div class="container">
+   <div class="row">
+        <div class="col">
+            <!--  <div class="jumbotron text-center bg-info"> -->
+                <h1 class="display-4 bg-info"><b>WELCOME TO KITCHEN STORY</b><h5><p class= "bg-info">Discover and savor our premium pizzas. Quality ingredients, endless flavors, delivered to your door.</p></h5>
+                </h1>
+               <!-- <p class= "bg-info">Discover and savor our premium pizzas. Quality ingredients, endless flavors, delivered to your door.</p>
+             </div> -->
+        </div>
+    </div> 
+
+    <br>
+
+    <div class="col-8 mx-auto">
+        <div class="card bg-info">
+            <div class="card-header">
+                <h5 class="text-center">Search pizza flavors and drinks to purchase...</h5>
+            </div>
+            <div class="card-body">
+
+                <div class="form-group col-8 mx-auto my-auto">
+                    <input type="text" class="form-control" [(ngModel)]="product" name="product"
+                        placeholder="Search for items...">
+                </div>
+
+            </div>s
+            <div class="card-footer text-center"><button (click)="search(product)"
+                    class="btn btn-success btn-lg">Search</button></div>
+        </div>
+    </div>
+
+</div>

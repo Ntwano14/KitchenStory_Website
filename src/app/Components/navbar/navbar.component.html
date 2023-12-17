@@ -1,0 +1,13 @@
+<header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        
+        <a *ngIf="!loggedIn" class="navbar-brand" routerLink="/"><img th:src="@{/images/logo.jpg}"  src="..\assets\images\images.jpg" width="auto" height="40" class="d-inline-block align-top" alt=""/> Kitchen Story</a>
+        <a *ngIf="loggedIn" class="navbar-brand" routerLink="/dashboard"><img th:src="@{/images/logo.jpg}"  src="..\assets\images\images.jpg" width="auto" height="40" class="d-inline-block align-top" alt=""/>Admin Dashboard</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a *ngIf="!loggedIn" routerLink="/login" role="button" class="">Admin Login</a>
+                <a *ngIf="loggedIn" (click)="logoutAdmin()" role="button" class="btn btn-info">Logout</a>
+            </li>
+        </ul>
+    </nav>
+</header>
